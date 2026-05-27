@@ -1,8 +1,6 @@
-<h1 align="center">⚡ JMeter Performance Testing</h1>
-<p align="center">
-  Performance and load testing using Apache JMeter on reqres.in REST API
-  simulating 50 concurrent virtual users
-</p>
+# ⚡ JMeter Performance Testing
+
+Performance and load testing using Apache JMeter on reqres.in REST API simulating 50 concurrent virtual users
 
 ---
 
@@ -57,8 +55,43 @@
 
 ## ▶️ How to Run
 
-### Prerequisites
-- Java JDK 21+
+Prerequisites
+- Java JDK 21
 - Apache JMeter 5.6.3
 
-### Run from command line
+Run from command line
+
+jmeter -n -t reqres-load-test.jmx -l results.jtl
+
+Open in JMeter GUI
+Double click jmeter.bat and open reqres-load-test.jmx
+
+---
+
+## 🔑 Key Concepts Covered
+
+- ✅ Thread Group — simulating concurrent users
+- ✅ HTTP Request Sampler — API endpoint testing
+- ✅ HTTP Header Manager — API key authentication
+- ✅ Summary Report — performance metrics
+- ✅ View Results Tree — individual request results
+- ✅ Response Time Graph — visual performance analysis
+
+---
+
+## 💡 Test Analysis
+
+- All 50 requests completed successfully with 0% error rate
+- Average response time of 685ms is within acceptable range
+- Max response time of 1169ms shows occasional latency spikes
+- Throughput of 36.8 requests per second confirms stable API performance
+
+---
+
+## 👩‍💻 Author
+
+Vishnu Durga S
+
+GitHub: https://github.com/VishnuDurgaCse
+
+Email: vishnudurgacs@gmail.com
